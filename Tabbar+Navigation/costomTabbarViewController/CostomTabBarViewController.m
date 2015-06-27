@@ -33,6 +33,10 @@
     [self addController:vc5 title:@"最好笑5"];
     
     
+ 
+}
+
+- (void)viewDidAppear:(BOOL)animated{
     /**
      自定义视图view 来存放图片
      */
@@ -45,6 +49,7 @@
         [tabbar setupWithImg:norImg selImg:selImg];
     }
     [self.tabBar addSubview:tabbar];
+    [super viewDidAppear:animated];
 }
 /**
  *  代码生成控制器则用这个跳转

@@ -21,6 +21,7 @@
 		210D31F01B3E76CB00B95956 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 210D31E91B3E76CB00B95956 /* TestViewController.m */; };
 		210D31F51B3E771C00B95956 /* JXTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 210D31F21B3E771C00B95956 /* JXTabbar.m */; };
 		210D31F61B3E771C00B95956 /* JXTabbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 210D31F41B3E771C00B95956 /* JXTabbarButton.m */; };
+		218555861B3EFD9800B896A6 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218555851B3EFD9800B896A6 /* Reveal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		210D31F21B3E771C00B95956 /* JXTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTabbar.m; sourceTree = "<group>"; };
 		210D31F31B3E771C00B95956 /* JXTabbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTabbarButton.h; sourceTree = "<group>"; };
 		210D31F41B3E771C00B95956 /* JXTabbarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTabbarButton.m; sourceTree = "<group>"; };
+		218555851B3EFD9800B896A6 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "../../../../../../../../Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				218555861B3EFD9800B896A6 /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +124,7 @@
 		210D31961B3E688E00B95956 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				218555851B3EFD9800B896A6 /* Reveal.framework */,
 				210D31971B3E688E00B95956 /* Info.plist */,
 				210D31981B3E688E00B95956 /* main.m */,
 			);
@@ -411,8 +415,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
+				);
 				INFOPLIST_FILE = "Tabbar+Navigation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -421,8 +435,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
+				);
 				INFOPLIST_FILE = "Tabbar+Navigation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
