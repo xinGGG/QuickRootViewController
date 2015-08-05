@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		210D31991B3E688E00B95956 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 210D31981B3E688E00B95956 /* main.m */; };
 		210D319C1B3E688E00B95956 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 210D319B1B3E688E00B95956 /* AppDelegate.m */; };
-		210D31A21B3E688E00B95956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210D31A01B3E688E00B95956 /* Main.storyboard */; };
 		210D31A41B3E688E00B95956 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 210D31A31B3E688E00B95956 /* Images.xcassets */; };
 		210D31A71B3E688E00B95956 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 210D31A51B3E688E00B95956 /* LaunchScreen.xib */; };
 		210D31B31B3E688E00B95956 /* Tabbar_NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 210D31B21B3E688E00B95956 /* Tabbar_NavigationTests.m */; };
@@ -21,6 +20,9 @@
 		210D31F01B3E76CB00B95956 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 210D31E91B3E76CB00B95956 /* TestViewController.m */; };
 		210D31F51B3E771C00B95956 /* JXTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 210D31F21B3E771C00B95956 /* JXTabbar.m */; };
 		210D31F61B3E771C00B95956 /* JXTabbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 210D31F41B3E771C00B95956 /* JXTabbarButton.m */; };
+		217288011B724E16006F0FFF /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 217287FE1B724E16006F0FFF /* UIBarButtonItem+Extension.m */; };
+		217288021B724E16006F0FFF /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 217288001B724E16006F0FFF /* UIView+Extension.m */; };
+		217288041B724E43006F0FFF /* icon_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 217288031B724E43006F0FFF /* icon_back.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		210D31981B3E688E00B95956 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		210D319A1B3E688E00B95956 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		210D319B1B3E688E00B95956 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		210D31A11B3E688E00B95956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		210D31A31B3E688E00B95956 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		210D31A61B3E688E00B95956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		210D31AC1B3E688E00B95956 /* Tabbar+NavigationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tabbar+NavigationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +62,11 @@
 		210D31F21B3E771C00B95956 /* JXTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTabbar.m; sourceTree = "<group>"; };
 		210D31F31B3E771C00B95956 /* JXTabbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTabbarButton.h; sourceTree = "<group>"; };
 		210D31F41B3E771C00B95956 /* JXTabbarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTabbarButton.m; sourceTree = "<group>"; };
+		217287FD1B724E16006F0FFF /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		217287FE1B724E16006F0FFF /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		217287FF1B724E16006F0FFF /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		217288001B724E16006F0FFF /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		217288031B724E43006F0FFF /* icon_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_back.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,8 @@
 		210D31951B3E688E00B95956 /* Tabbar+Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				217288031B724E43006F0FFF /* icon_back.png */,
+				217287FC1B724E16006F0FFF /* Category */,
 				210D319A1B3E688E00B95956 /* AppDelegate.h */,
 				210D319B1B3E688E00B95956 /* AppDelegate.m */,
 				210D31BF1B3E68B700B95956 /* NavigationViewController.h */,
@@ -110,7 +118,6 @@
 				210D31D91B3E76CB00B95956 /* costomTabbarViewController */,
 				210D31E11B3E76CB00B95956 /* systemTabbarViewController */,
 				210D31E41B3E76CB00B95956 /* test */,
-				210D31A01B3E688E00B95956 /* Main.storyboard */,
 				210D31A31B3E688E00B95956 /* Images.xcassets */,
 				210D31A51B3E688E00B95956 /* LaunchScreen.xib */,
 				210D31961B3E688E00B95956 /* Supporting Files */,
@@ -176,6 +183,17 @@
 				210D31E91B3E76CB00B95956 /* TestViewController.m */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		217287FC1B724E16006F0FFF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				217287FD1B724E16006F0FFF /* UIBarButtonItem+Extension.h */,
+				217287FE1B724E16006F0FFF /* UIBarButtonItem+Extension.m */,
+				217287FF1B724E16006F0FFF /* UIView+Extension.h */,
+				217288001B724E16006F0FFF /* UIView+Extension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +276,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				210D31A21B3E688E00B95956 /* Main.storyboard in Resources */,
 				210D31EF1B3E76CB00B95956 /* NextViewController.xib in Resources */,
 				210D31A71B3E688E00B95956 /* LaunchScreen.xib in Resources */,
+				217288041B724E43006F0FFF /* icon_back.png in Resources */,
 				210D31A41B3E688E00B95956 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,8 +299,10 @@
 			files = (
 				210D31F61B3E771C00B95956 /* JXTabbarButton.m in Sources */,
 				210D31C11B3E68B700B95956 /* NavigationViewController.m in Sources */,
+				217288021B724E16006F0FFF /* UIView+Extension.m in Sources */,
 				210D319C1B3E688E00B95956 /* AppDelegate.m in Sources */,
 				210D31991B3E688E00B95956 /* main.m in Sources */,
+				217288011B724E16006F0FFF /* UIBarButtonItem+Extension.m in Sources */,
 				210D31F51B3E771C00B95956 /* JXTabbar.m in Sources */,
 				210D31ED1B3E76CB00B95956 /* SystemTabBarViewController.m in Sources */,
 				210D31EE1B3E76CB00B95956 /* NextViewController.m in Sources */,
@@ -310,14 +330,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		210D31A01B3E688E00B95956 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				210D31A11B3E688E00B95956 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		210D31A51B3E688E00B95956 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

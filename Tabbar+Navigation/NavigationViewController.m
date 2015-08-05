@@ -7,6 +7,7 @@
 //
 
 #import "NavigationViewController.h"
+#import "UIBarButtonItem+Extension.h"
 
 @interface NavigationViewController ()
 
@@ -21,7 +22,7 @@
     if ( self == [NavigationViewController class]) {
         
         [self setupNav];
-
+        
         [self setupItem];
     }
 }
@@ -42,7 +43,7 @@
     
     //标题样式
     NSMutableDictionary *barStyle = [NSMutableDictionary dictionary];
-    barStyle[NSForegroundColorAttributeName] =[UIColor colorWithRed:75/255.0f green:76/255.0f blue:81/255.0f alpha:1];
+    barStyle[NSForegroundColorAttributeName] = [UIColor whiteColor];
     barStyle[NSFontAttributeName] = [UIFont boldSystemFontOfSize:17];
     [bar setTitleTextAttributes:barStyle];
     
@@ -53,16 +54,16 @@
  */
 + (void)setupItem{
     
-    UIBarButtonItem *item = [UIBarButtonItem appearance];
     
+    UIBarButtonItem *item = [UIBarButtonItem appearance];
     NSMutableDictionary *dictM = [NSMutableDictionary dictionary];
-    dictM[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
+    dictM[NSForegroundColorAttributeName] = [UIColor whiteColor];
     dictM[NSFontAttributeName] = [UIFont systemFontOfSize:18];
     [item setTitleTextAttributes:dictM forState:UIControlStateNormal];
     
-//    导航条返回键带的title太讨厌了,怎么让它消失!
-    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)                                                      forBarMetrics:UIBarMetricsDefault];
-
+    //    导航条返回键带的title太讨厌了,怎么让它消失!
+    //    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)                                                      forBarMetrics:UIBarMetricsDefault];
+    
 }
 
 
@@ -70,9 +71,15 @@
     
     if (self.childViewControllers.count>0 ) {
         viewController.hidesBottomBarWhenPushed = YES;
+        //通用back
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithNmlImg:@"icon_back" hltImg:@"icon_back" target:self action:@selector(back)];
     }
     
     [super pushViewController:viewController animated:animated];
+}
+- (void)back{
+    
+    [self popViewControllerAnimated:YES];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -85,13 +92,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
